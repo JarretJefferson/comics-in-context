@@ -1,8 +1,11 @@
 import React from "react"
 import CollectorButton from './CollectorButton'
 import SubmitForm from './SubmitForm'
+import StylesContext from "./StylesContext"
+import { useContext } from "react"
 
 export default function UserInterface () {
+  const {headerStyle}= useContext(StylesContext)
   return (
     <div>
       <h2>We carry the latest and greatest editions of your favorite comic books!</h2>
